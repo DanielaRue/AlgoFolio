@@ -1,0 +1,48 @@
+<template>
+    <div>
+        <b-container fluid>
+            <b-row class="justify-content-md-center" align-v="center">
+                <b-col cols="4" class="shadow p-3 mb-5 bg-white rounded">
+                    
+                    <b-nav tabs align="center">
+                        <b-nav-item to="Login">Inicio</b-nav-item>
+                        <b-nav-item to="Register">Registro</b-nav-item>
+                        <b-nav-item active>Olvidé mi contraseña</b-nav-item>
+                    </b-nav>
+                        
+                    <b-form class="icons">
+                        <b-row class="my-4">
+                            <b-col sm="4">
+                                <label for="email">
+                                    <p class="h4 mb-2"><b-icon icon="mailbox"></b-icon></p>
+                                </label>
+                            </b-col>
+                            <b-col sm="7">
+                             <b-form-input v-model="text" type="email" id="email" placeholder="Ingrese su correo" required></b-form-input>
+                            </b-col>
+                        </b-row>
+
+                    </b-form>
+
+                    <div class=" pt-3">
+                        <b-button pill block variant="dark">ENVIAR CORREO</b-button>
+                    </div>
+
+                </b-col>
+            </b-row>
+        </b-container>
+    </div>
+</template>
+
+<script>
+export default {
+    
+}
+</script>
+
+<style>
+    .icons{
+        text-align: center;
+        color: #fe4e00;
+    }
+</style>
